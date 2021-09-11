@@ -5,7 +5,7 @@ public class FloatingPoints {
 		Scanner keyboard = new Scanner(System.in);
 		double x ;
 		System.out.println("Enter a number between 2e-11 and 2e11:");
-		x = keyboard.nextFloat();
+		x = keyboard.nextDouble();
 		double y = 1.0 / x;
 		System.out.println("x = " + x + "\ny = " +y + "\nthe product of x , y = " + x*y);
 		double product = x * y;
