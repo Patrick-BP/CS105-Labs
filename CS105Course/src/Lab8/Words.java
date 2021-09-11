@@ -11,7 +11,7 @@ public class Words {
 			String input = keyboard.next();
 			boolean j = input.startsWith("");
 			boolean k = input.endsWith("");
-			if (j.equals(k)) {
+			if ()) {
 				System.out.println("the word " + input + " has the first and last character that are the same");
 				continue;
 				
