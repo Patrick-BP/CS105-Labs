@@ -9,9 +9,10 @@ public class Words {
 		while(true) {
 			
 			String input = keyboard.next();
-			boolean j = input.startsWith("");
-			boolean k = input.endsWith("");
-			if ()) {
+			int n = input.length();
+			char firstChar = input.charAt(0);
+			char lastChar = input.charAt(n - 1);
+			if (firstChar == lastChar) {
 				System.out.println("the word " + input + " has the first and last character that are the same");
 				continue;
 				
@@ -21,12 +22,9 @@ public class Words {
 				break;
 			}
 			
-			
 		}	
 		System.out.println("Loop stopped to receive input");
 		keyboard.close();
 	}
-
-	
 
 }
