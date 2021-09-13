@@ -1,4 +1,4 @@
-package exercises;
+package chapter777;
 
 public class TernaryOperator {
 

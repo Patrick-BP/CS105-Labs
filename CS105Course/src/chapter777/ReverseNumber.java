@@ -1,4 +1,4 @@
-package exercises;
+package chapter777;
 import java.util.Scanner;
 public class ReverseNumber {
 	public static void main(String[] args) {
