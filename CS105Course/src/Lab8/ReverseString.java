@@ -6,7 +6,7 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("Enter a text");
+		System.out.println("Enter a string with blank characters: ");
 		String text = keyboard.nextLine(),
 				reverse = " ";
 		int textlength = text.length();

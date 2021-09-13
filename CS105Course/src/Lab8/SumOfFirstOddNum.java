@@ -17,7 +17,7 @@ public class SumOfFirstOddNum {
 			i++;
 			
 		}
-			System.out.println("The First " +n + " positive odd intiger is: " + sum);
+			System.out.println("The sum of the First  " +n + " odd integer is: " + sum);
 			keyboard.close();
 	}
 

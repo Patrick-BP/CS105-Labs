@@ -10,7 +10,7 @@ public class Starts {
 		int n = keyboard.nextInt();
 		
 		for(int i =0; i<=n; i++) {
-			System.out.println(" ");
+			System.out.println();
 			for(int k=0; k<i; k++ ) {
 				System.out.print("*");
 			}
