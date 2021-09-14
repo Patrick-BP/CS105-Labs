@@ -1,6 +1,6 @@
 package chapter5.Lab9;
 
-public class Test {
+public class TestMain {
 
 	public static void main(String[] args) {
 		
