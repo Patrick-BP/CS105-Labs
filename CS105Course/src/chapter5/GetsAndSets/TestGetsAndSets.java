@@ -1,16 +1,21 @@
-package chapter5.Lab9;
+package chapter5.GetsAndSets;
 
-public class TestRectangle {
+public class TestGetsAndSets {
 	
-	private double length, width;
+private double length, width;
 	
-	public void setDimension(double l, double w) {
+	public TestGetsAndSets(double l, double w) {
 		
 		length = l ;
 		width = w;
 			
 	}
-	
+public TestGetsAndSets() {
+		
+		length = 0.0;
+		width = 0.0;
+			
+	}
 	public double area() {
 		
 		double a = length * width;
@@ -23,5 +28,6 @@ public class TestRectangle {
 		System.out.println("perimeter is " + p);
 		return p;
 	}
+
 
 }
