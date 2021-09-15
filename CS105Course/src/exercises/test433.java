@@ -1,4 +1,4 @@
-package chapter777;
+package exercises;
 
 public class test433 {
 
