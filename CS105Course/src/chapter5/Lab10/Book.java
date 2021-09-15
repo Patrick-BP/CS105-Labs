@@ -1,9 +1,7 @@
 package chapter5.Lab10;
-
 public class Book {
 	
-	private String title,
-	author;
+	private String title, author;
 	private double price;
 	private int quatity;
 	
@@ -15,15 +13,12 @@ public class Book {
 		this.quatity = quatity;
 		
 	}
-	public Book(String title, String author ) {
-		
-		this.title = title;
-		this.author = author;
-		
-		
-	}
-public Book(){
 	
+	public Book(){
+		title = "Java of Beginers";
+		author = "Patrick";
+		price = 0.0;
+		quatity = 0;
 		
 	}
 	public double totalPrice() {
@@ -33,10 +28,8 @@ public Book(){
 	}
 	
 	public String writeOutup() {
-		String res = "\nTitle: " + title+ "\nAuthor: " + author + "\nPrice: " + price + "\nQuatity: " +quatity + "\n";
-		System.out.println(res);
-		return res;
-			
+		return  "\nTitle: " + title+ "\nAuthor: " + author + "\nPrice: " + price + "\nQuatity: " +quatity + "\n";
+		
 	}
 
 	public double getPrice() {

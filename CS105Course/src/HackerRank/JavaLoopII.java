@@ -11,11 +11,10 @@ public class JavaLoopII {
 	            int a = in.nextInt();
 	            int b = in.nextInt();
 	            int n = in.nextInt();
+	            int calc = a;
 	            for(int j = 1; j<=n; j++) {
-	            	int res =0;
-	            	 res = res + j*b;
-	            	 res = a + j*b;
-	            	System.out.println(res);
+	            	calc +=(Math.pow(2,j)*b);
+	            	System.out.println(calc + " ");
 	            
 	            	}
 	        }

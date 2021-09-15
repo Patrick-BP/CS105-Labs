@@ -1,5 +1,4 @@
 package chapter5.Lab10;
-
 public class TestPerson {
 
 	public static void main(String[] args) {
@@ -9,15 +8,12 @@ public class TestPerson {
 		System.out.println(personInfo);
 		System.out.println("\n--------- Defalt Parameterized Constructor -----------------\n");
 		
-		personInfo.setFirstName("Patrick");
+		personInfo.setFirstName("Patrick ");
 		personInfo.setlastName("Bihizi");
 		personInfo.setEmail("papybp@gmail.com");
 		personInfo.setTelNumber("4692150557");
-		
-		System.out.println(personInfo.getFirstName());
-		System.out.println(personInfo.getlastName());
-		System.out.println(personInfo.getEmail());
-		System.out.println(personInfo.getTelNumber());
+
+		System.out.println(personInfo);
 		
 		System.out.println("\n--------- Validating Parameterized Constructor -----------------\n");
 		
@@ -27,11 +23,7 @@ public class TestPerson {
 		personInfo2.setEmail("papybpgmailcom");
 		personInfo2.setTelNumber("4692150557567456");
 		
-		System.out.println(personInfo2.getFirstName());
-		System.out.println(personInfo2.getlastName());
-		System.out.println(personInfo2.getEmail());
-		System.out.println(personInfo2.getTelNumber());
-
+		System.out.println(personInfo2);
 	}
 
 }

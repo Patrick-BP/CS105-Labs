@@ -1,10 +1,10 @@
 package chapter5.Lab10;
-
 public class PersonAddress {
 	
+	// declaring all instance fields
 	private String firstName,lastName, email, telNumber;
 	
-	
+	// Default Constructor
 	public PersonAddress() {
 		firstName = "Unknown";
 		lastName = "Unknown";
@@ -12,24 +12,18 @@ public class PersonAddress {
 		telNumber = "6414727000";
 		
 	}
+	
+	// Parameterized constructor
 	public PersonAddress(String firstName, String lastname, String email, String telNumber) {
 		
 		this.firstName = firstName;
 		this.lastName = lastname;
-		
-		if(email.contains("@") && email.contains("."))
-			this.email = email;
-		else
-			this.email = "test@miu.edu";
-		
-		
-		if(telNumber.length() == 10)
-			this.telNumber = telNumber;
-		else
-			this.telNumber = "6414727000";
-		
+		// validating email and telNumber data
+		this.email = (email.contains("@") && email.contains("."))? email : "test@miu.edu";
+		this.telNumber = (telNumber.length() == 10) ? telNumber : "6414727000";	
 	}
 	
+	// Getters and setters for First name
 	public String getFirstName() {
 		return firstName;
 	}
@@ -37,7 +31,7 @@ public class PersonAddress {
 		this.firstName = firstName;	
 	}
 	
-	
+	// Getters and Setters for Last name
 	public String getlastName() {
 		return lastName;	
 	}
@@ -45,28 +39,25 @@ public class PersonAddress {
 		this.lastName = lastName;	
 	}
 	
+	// Getters and Setters for Email
 	public String getEmail() {
 		return email;	
 	}
 	public void setEmail(String email) {
-		if(email.contains("@") && email.contains("."))
-		this.email = email;
-		else
-			System.out.println("Invalid input of email ");
+		this.email = (email.contains("@") && email.contains(".")) ? email : "Invalid input of email ";
 	}
 	
+	// Getters and Setters for Telephone Number 
 	public String getTelNumber() {
 		
 		return telNumber;
 	}
 	public void setTelNumber(String telNumber) {
-		if(telNumber.length() == 10)
-			this.telNumber = telNumber;	
-		else
-			System.out.println("Invalid input of telephone number\n");
+		this.telNumber = (telNumber.length() == 10) ? telNumber : "Invalid input of telephone number\n";	
+		
 	}
 	
-	
+	// overriding toString() method
 	@Override
 	public String toString() {
 		return " " +firstName + " " + lastName + ", Email: " + email + ", Telephone Number: " + telNumber ;
