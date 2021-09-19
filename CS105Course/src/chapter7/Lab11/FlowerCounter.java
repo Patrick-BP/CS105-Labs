@@ -19,7 +19,6 @@ public class FlowerCounter {
 			
 		}
 		
-		
 		double totalCost = 0;
 		String flowerName = "";
 		double price=0;
