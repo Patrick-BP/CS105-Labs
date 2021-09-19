@@ -14,11 +14,16 @@ public class CountFamiles {
 			System.out.println("Enter income for : " + i);
 			famIncomes[i] = key.nextDouble();
 		}
-		System.out.println(Arrays.toString(famIncomes));
 		
-		
+		System.out.print("[ ");
+		for(int i = 0; i<famIncomes.length; i++) {
+			
+			System.out.print(famIncomes[i] + " " );
+			
+		}
+		System.out.println(" ]");
 		double max = famIncomes[0];
-		double min = famIncomes[0];
+		
 		
 		for(int i = 0; i < famIncomes.length; i++) {
 			if(famIncomes[i] > max) max = famIncomes[i];
@@ -33,6 +38,6 @@ public class CountFamiles {
 			if(famIncomes[i] < maxtenpercent) count++;
 		}
 		System.out.println(count + " family member is making less than 10% of $" + max);
-		
+		key.close();
 	}
 }

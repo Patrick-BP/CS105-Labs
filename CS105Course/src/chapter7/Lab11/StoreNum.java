@@ -1,7 +1,7 @@
 package chapter7.Lab11;
 
-import java.util.Arrays;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class StoreNum {
 
@@ -15,7 +15,15 @@ public class StoreNum {
 			store[i] = key.nextInt();
 			
 		}
-		System.out.println(Arrays.toString(store));
+		
+		System.out.print("[ ");
+		for(int i = 0; i<store.length; i++) {
+			
+			System.out.print(store[i] + " " );
+			
+		}
+		System.out.println(" ]");
+		
 		
 		int min = store[0];
 		
@@ -23,6 +31,7 @@ public class StoreNum {
 			if(store[i] < min) min = store[i];
 		}
 		System.out.println("the smallest number is : " + min);
+		key.close();
 	}
 
 }
