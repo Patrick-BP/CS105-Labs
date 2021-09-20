@@ -15,7 +15,7 @@ public class CountFamiles {
 		showArray(famIncomes);
 		
 		findLowIncomes(famIncomes);		
-		
+		key.close();
 	}
 	
 	
@@ -25,6 +25,7 @@ public class CountFamiles {
 			System.out.println("Enter income for : " + i);
 			x[i] = key.nextDouble();
 		}
+		key.close();
 	}
 	
 	public static void showArray(double[] x) {
