@@ -16,19 +16,23 @@ public class StoreNum {
 			
 		}
 		
-		System.out.print("[ ");
-		for(int i = 0; i<store.length; i++) {
-			
-			System.out.print(store[i] + " " );
-			
-		}
-		System.out.println(" ]");
+		showArray(store);
 		
 		smallestNum(store);
 		
 		
 		
 		key.close();
+	}
+	
+	public static void showArray(int[] x) {
+		System.out.print("[ ");
+		for(int i = 0; i< x.length; i++) {
+			
+			System.out.print(x[i] + " " );
+			
+		}
+		System.out.println(" ]");
 	}
 	
 	public static void smallestNum(int[] x) {
