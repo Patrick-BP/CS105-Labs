@@ -1,7 +1,6 @@
 package chapter7.Lab11;
 
 import java.util.Scanner;
-
 public class FlowerCounter {
 	public static void main(String[] args) {
 		String[] flowers = {"petunia", "pansy", "rose", "violet", "carnation"};
@@ -10,6 +9,9 @@ public class FlowerCounter {
 		Scanner key = new Scanner(System.in);
 		System.out.println("Enter a flower name: ");
 		String name = key.next();
+		
+		for(int k=0; k< flowers.length; k++) {
+			if(name.equals(flowers[k])) {
 		
 		System.out.println("Enter a flower Quatity : ");
 		int qty = key.nextInt();
@@ -37,7 +39,10 @@ public class FlowerCounter {
 		key.close();
 	}
 	
+			
+		}
 	
-
+	}
+		
 
 }

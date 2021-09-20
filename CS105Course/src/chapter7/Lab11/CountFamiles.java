@@ -1,7 +1,6 @@
 package chapter7.Lab11;
 
 import java.util.*;
-
 public class CountFamiles {
 	public static void main(String[] args) {
 		Scanner key = new Scanner(System.in);
@@ -14,10 +13,10 @@ public class CountFamiles {
 		
 		showArray(famIncomes);
 		
-		findLowIncomes(famIncomes);		
+		findLowIncomes(famIncomes);	
+		
 		key.close();
 	}
-	
 	
 	public static void PopulateArray(double[] x) {
 		Scanner key = new Scanner(System.in);
@@ -37,9 +36,6 @@ public class CountFamiles {
 		}
 		System.out.println(" ]");
 	}
-	
-	
-	
 	public static void findLowIncomes(double[] x) {
 		double max = x[0];
 		int count = 0;
