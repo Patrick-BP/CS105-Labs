@@ -36,5 +36,8 @@ public class FlowerCounter {
 		System.out.println( "Total cost : $"   + totalCost ); 
 		key.close();
 	}
+	
+	
+
 
 }

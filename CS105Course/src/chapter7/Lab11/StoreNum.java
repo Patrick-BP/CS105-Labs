@@ -24,14 +24,19 @@ public class StoreNum {
 		}
 		System.out.println(" ]");
 		
+		smallestNum(store);
 		
-		int min = store[0];
 		
-		for(int i = 0; i < store.length; i++) {
-			if(store[i] < min) min = store[i];
+		
+		key.close();
+	}
+	
+	public static void smallestNum(int[] x) {
+		int min = x[0];
+		for(int i = 0; i < x.length; i++) {
+			if(x[i] < min) min = x[i];
 		}
 		System.out.println("the smallest number is : " + min);
-		key.close();
 	}
 
 }
